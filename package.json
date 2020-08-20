@@ -1,0 +1,26 @@
+{
+  "name": "unplayer",
+  "version": "1.0.0",
+  "description": "Wrapper NO oficial de la API unplayer",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyuuh/unplayer.git"
+  },
+  "keywords": [
+    "unplayer",
+    "wrapper"
+  ],
+  "author": "Hyuuh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hyuuh/unplayer/issues"
+  },
+  "homepage": "https://github.com/Hyuuh/unplayer#readme",
+  "dependencies": {
+    "node-superfetch": "^0.1.10"
+  }
+}
