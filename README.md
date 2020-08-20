@@ -45,7 +45,7 @@ console.log(dato)
 })
 ```
 **Esto retornaría algo parecido [a](https://github.com/un-player/unplayer-api#m%C3%A9todos-restful-disponibles):**
-```js
+```json
 {
         "user": 12345,
         "forum": 12345,
@@ -91,7 +91,7 @@ const client = new UnPlayer({
 client.GTAV.user('36');
 ```
 **Esto retornaría algo parecido [a](https://github.com/un-player/unplayer-api#m%C3%A9todos-restful-disponibles-gtav):**
-```js
+```json
 {
     "action": "GET 1.0\/gtav\/user\/1",
     "name": "Nombre_Apellido",
@@ -145,7 +145,7 @@ const client = new UnPlayer({
 client.GTAV.org('12');
 ```
 **Esto retornaría algo parecido [a](https://github.com/un-player/unplayer-api#m%C3%A9todos-restful-disponibles-gtav):**
-```js
+```json
 {
     "action": "GET 1.0\/gtav\/org\/20",
     "id": 12,
@@ -217,7 +217,7 @@ const client = new UnPlayer({
 client.SAMP.user('21');
 ```
 **Esto retornaría algo parecido [a](https://github.com/un-player/unplayer-api#m%C3%A9todos-restful-disponibles-samp):**
-```js
+```json
 {
     "action": "GET 1.0\/samp\/user\/1",
     "name": "Nombre_Apellido",
@@ -273,7 +273,7 @@ const client = new UnPlayer({
 client.SAMP.org('1150');
 ```
 **Esto retornaría algo parecido [a](https://github.com/un-player/unplayer-api#m%C3%A9todos-restful-disponibles-samp):**
-```js
+```json
 {
     "action": "GET 1.0\/samp\/org\/1150",
     "id": 1150,
@@ -360,7 +360,7 @@ const client = new UnPlayer({
 client.SAMP.faction('30');
 ```
 **Esto retornaría algo parecido [a](https://github.com/un-player/unplayer-api#m%C3%A9todos-restful-disponibles-samp):**
-```js
+```json
 {
     "action": "GET 1.0\/samp\/faction\/1",
     "id": 1,
