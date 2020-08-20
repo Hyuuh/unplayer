@@ -4,7 +4,7 @@ NO COPIAR NADA DE ACÁ
 LEAN EL README.MD
 
 */
-const UnPlayer = require('./src/index');
+const UnPlayer = require('../index');
 const client = new UnPlayer({
     api_key: '10233',
     api_private: '01113'
@@ -16,7 +16,7 @@ client.user("user", "1").then(user => console.log(user));
 
 
 //Otra manera de utilizar sería:
-const {GTAV} = require('./src/index');
+const {GTAV} = require('../index');
 new GTAV({
     api_key: '10233',
     api_private: '01113'
