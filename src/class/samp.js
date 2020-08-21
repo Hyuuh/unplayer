@@ -15,6 +15,7 @@ class SAMP {
         this.api = "https://unplayer.com/api/1.0/";
     }
     /**
+     * Método para obtener la información de un usuario en el servidor de SAMP.
      * @param {string} id ID del usuario.
      * @returns {
 Promise<{
@@ -43,7 +44,7 @@ Promise<{
     }
 
     /**
-     * 
+     * Método para obtener la información de una organización en el servidor de SAMP
      * @param {string} id ID de la organización.
      * @returns {
 Promise<{
@@ -77,6 +78,7 @@ Promise<{
 
 
     /**
+     * Método para obtener la información de una facción en el servidor de SAMP
      * @param {string} id ID de la facción.
      * @returns {
 Promise<{

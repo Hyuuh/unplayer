@@ -1,4 +1,4 @@
-# UnPlayer **WRAPPER**
+# Un Player **WRAPPER**
 
 > **Nota:** Este módulo no está afiliado de ninguna manera a UnPlayer.
 
@@ -6,8 +6,13 @@ Con este módulo busco facilitar la manera de uso de la API para NodeJS.
 
 Ya no estar utilizando y complicándose la vida. Dicho esto, les doy un índice de lo que contiene este módulo.
 
-## [`Índice`](#índice)
+¿Deseas ayuda para poder utilizar esta ``Wrapper`` o simplemente no sabes qué hacer?
+> Entra al servidor de [soporte](https://discord.gg/HznksNp)
 
+## [`Índice`](#índice)
+* [Cambios](#cambios)
+    * [Actualizaciones](#actualizaciones)
+    * [Futuros Cambios](#futuro-cambios)
 * [UnPlayer](#unplayer)
     * [user](#unplayer-user)
 * [GTAV](#gta-v)
@@ -18,6 +23,15 @@ Ya no estar utilizando y complicándose la vida. Dicho esto, les doy un índice 
     * [org](#samp-org)
     * [faction](#samp-faction)
 
+# Cambios
+## Actualizaciones
+- v1.0.1
+    - Se modificó el README.md para añadir el servidor de soporte.
+    - Arreglo de posibles errores.
+    - Arreglo de errores
+        - Un error cuando la ID existía pero no tenía datos guardados.
+- v1.0.0
+    - Inicio de proyecto.
 
 # UnPlayer
 ## [UnPlayer-user](#unplayer-user)

@@ -15,6 +15,7 @@ class GTAV {
         this.api = "https://unplayer.com/api/1.0/";
     }
     /**
+     * Método para obtener la información de un usuario en el servidor de GTA-V
      * @param {string} id ID del usuario.
      * @returns {Promise<{
             "action": string,
@@ -39,7 +40,7 @@ class GTAV {
     }
 
     /**
-     * 
+     * Método para obtener la información de una organización en el servidor de GTA-V 
      * @param {string} id
      * @returns {
 Promise<{
@@ -71,7 +72,8 @@ Promise<{
      */
     async org(id) {
         let result = await node_fetch.get(`${this.api}gtav/org/${id}`).set({"__api_key": this.api_key, "__api_private": this.api_private});
-        if(result.body.error) throw new UnPlayerError("No tienes autorización con las KEYS ingresadas.")
+        if(result.body.error) throw new UnPlayerError("No tienes autorización con las KEYS ingresadas.");
+        if(result.body.id == 0) throw new UnPlayerError("¡La organización no existe!");
         return buscador.body;
     }
    

@@ -1,7 +1,7 @@
 {
   "name": "unplayer",
-  "version": "1.0.0",
-  "description": "Wrapper NO oficial de la API unplayer",
+  "version": "1.0.1",
+  "description": "Wrapper NO oficial de la API UN Player",
   "main": "src/index.js",
   "scripts": {
     "test": "node src/test/index.js"

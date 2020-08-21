@@ -5,25 +5,28 @@ const GTAV = require('./class/gtav')
 const SAMP = require('./class/samp')
 class UnPlayer {
     /**
+     * Retorna la clase GTA-V.
      * @static
      * @returns {GTAV}
      */
     static GTAV = GTAV;
     /**
+     * Métodos en el README.md
      * @param {{api_private: string, api_key: string}} [options={}]
      * @example
      * new UnPlayer({api_private: '', api_key: ''})
      * UnPlayer.GTAV()
      */
     constructor(options = {}) {
-        if(!options.api_key || !options.api_key) throw new UnPlayerError("No has especificado el token.");
+        if(!options.api_key) throw new UnPlayerError(`No has especificado el API-KEY.`);
+        if(!options.api_private) throw new UnPlayerError(`No has especificado el API-PRIVATE.`);
         this.api_key = options.api_key;
         this.api_private = options.api_private;
         this.api = "https://unplayer.com/api/1.0/";
         this.GTAV = new GTAV({api_key: this.api_key, api_private: this.api_private});
     }
     /**
-     * 
+     * Método para obtener la información de un usuario en el servidor de UN Player
      * @param {string} id ID del usuario.
      * @param {"user" | "samp" | "gtav" | "forum" | "discord"} type El tipo de busqueda.
      * @returns {
